@@ -33,7 +33,11 @@ return packer.startup(function(use)
 
   use "nvim-lua/plenary.nvim" -- lua functions that many plugins use
 
+  use { "sindrets/diffview.nvim", requires = "nvim-lua/plenary.nvim" } --git diff
+
   use "sheerun/vim-polyglot"
+
+  use "styled-components/vim-styled-components"
 
   use "altercation/vim-colors-solarized" --colorscheme
 
