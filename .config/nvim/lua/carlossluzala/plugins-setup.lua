@@ -33,11 +33,11 @@ return packer.startup(function(use)
 
   use "nvim-lua/plenary.nvim" -- lua functions that many plugins use
 
-  use "sheerun/vim-polyglot" --colorscheme
+  use "sheerun/vim-polyglot"
 
-  use "rose-pine/neovim"
+  use "altercation/vim-colors-solarized" --colorscheme
 
-  use "brenoprata10/nvim-highlight-colors"
+  use "bluz71/vim-nightfly-colors"
   use "christoomey/vim-tmux-navigator" -- tmux & split window navigation
 
   use "szw/vim-maximizer" -- maximizes and restores current window
