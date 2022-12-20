@@ -1,6 +1,6 @@
-local status, _ = pcall(vim.cmd, "colorscheme nightfly")
+vim.g.tokyonight_transparent_sidebar = true
+vim.g.tokyonight_transparent = true
+vim.opt.background = "dark"
+vim.cmd "colorscheme tokyonight"
 
-if not status then
-  print "Colorscheme not found!"
-  return
-end
+vim.cmd "hi Normal guibg=NONE ctermbg=NONE"

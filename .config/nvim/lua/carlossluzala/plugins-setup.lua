@@ -11,6 +11,7 @@ local ensure_packer = function()
 end
 local packer_bootstrap = ensure_packer() -- true if packer was just installed
 
+--
 -- autocommand that reloads neovim and installs/updates/removes plugins
 -- when file is saved
 vim.cmd [[ 
@@ -39,39 +40,29 @@ return packer.startup(function(use)
 
   use "styled-components/vim-styled-components"
 
-  use "altercation/vim-colors-solarized" --colorscheme
+  use "xiyaowong/nvim-transparent" -- transparency
 
-  use "bluz71/vim-nightfly-colors"
+  use "folke/tokyonight.nvim"
   use "christoomey/vim-tmux-navigator" -- tmux & split window navigation
 
   use "szw/vim-maximizer" -- maximizes and restores current window
 
   -- essential plugins
   use "tpope/vim-surround" -- add, delete, change surroundings (it's awesome)
-  use "vim-scripts/ReplaceWithRegister" -- replace with register contents using motion (gr + motion)
 
   -- commenting with gc
   use "numToStr/Comment.nvim"
 
   -- file explorer
-  use {
-    "nvim-tree/nvim-tree.lua",
-    requires = {
-      "nvim-tree/nvim-web-devicons", -- optional, for file icons
-    },
-    tag = "nightly", -- optional, updated every week. (see issue #1193)
-  }
+  use { "nvim-telescope/telescope-file-browser.nvim" }
   -- vs-code like icons
   use "kyazdani42/nvim-web-devicons"
 
-  -- tabs
-  use {
-    "romgrk/barbar.nvim",
-    requires = { "kyazdani42/nvim-web-devicons" },
-  }
-
   -- statusline
-  use "nvim-lualine/lualine.nvim"
+  use {
+    "nvim-lualine/lualine.nvim",
+    requires = { "kyazdani42/nvim-web-devicons", opt = true },
+  }
 
   -- fuzzy finding w/ telescope
   use { "nvim-telescope/telescope-fzf-native.nvim", run = "make" } -- dependency for better sorting performance
@@ -98,10 +89,6 @@ return packer.startup(function(use)
   use "jose-elias-alvarez/typescript.nvim" -- additional functionality for typescript server (e.g. rename file & update imports)
   use "onsails/lspkind.nvim" -- vs-code like icons for autocompletion
 
-  -- auto close stuff
-  use "jiangmiao/auto-pairs"
-  use "windwp/nvim-ts-autotag"
-
   -- formatting & linting
   use "jose-elias-alvarez/null-ls.nvim" -- configure formatters & linters
   use "jayp0521/mason-null-ls.nvim" -- bridges gap b/w mason & null-ls
@@ -122,10 +109,6 @@ return packer.startup(function(use)
   use "lewis6991/gitsigns.nvim" -- show line modifications on left hand side
 
   use "ThePrimeagen/vim-be-good"
-
-  use "lukas-reineke/indent-blankline.nvim"
-
-  use "xiyaowong/nvim-transparent"
 
   if packer_bootstrap then
     require("packer").sync()
