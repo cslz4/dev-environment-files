@@ -12,8 +12,9 @@ export NODE_ENV="development"
 # Aliases
 alias zsc="code ~/.zshrc"
 alias zs="source ~/.zshrc"
-
+alias vim=nvim
 # ZSH Variables
+
 export ZSH="/Users/carlossluzala/.oh-my-zsh"
 ZSH_THEME="avit"
 
