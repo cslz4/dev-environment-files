@@ -205,6 +205,11 @@ _G.packer_plugins = {
     path = "/Users/carlossluzala/.local/share/nvim/site/pack/packer/start/vim-polyglot",
     url = "https://github.com/sheerun/vim-polyglot"
   },
+  ["vim-styled-components"] = {
+    loaded = true,
+    path = "/Users/carlossluzala/.local/share/nvim/site/pack/packer/start/vim-styled-components",
+    url = "https://github.com/styled-components/vim-styled-components"
+  },
   ["vim-tmux-navigator"] = {
     loaded = true,
     path = "/Users/carlossluzala/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",

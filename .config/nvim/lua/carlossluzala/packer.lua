@@ -20,6 +20,8 @@ return require('packer').startup(function(use)
             requires = { { 'nvim-lua/plenary.nvim' } }
         }
 
+        use('styled-components/vim-styled-components')
+
         use {
             'olivercederborg/poimandres.nvim',
             config = function()
