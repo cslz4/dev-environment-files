@@ -1,3 +1,4 @@
+vim.opt.hidden = true
 vim.opt.guicursor = ""
 
 vim.opt.nu = true
