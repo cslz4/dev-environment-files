@@ -6,7 +6,6 @@ vim.cmd.packadd("packer.nvim")
 return require("packer").startup(function(use)
 			-- Packer can manage itself
 			use("wbthomason/packer.nvim")
-
 			use("nvim-lua/plenary.nvim")
 			use("theprimeagen/harpoon")
 
@@ -41,7 +40,6 @@ return require("packer").startup(function(use)
 			use("mbbill/undotree")
 			use("tpope/vim-fugitive")
 
-			use("neovim/nvim-lspconfig") -- easily configure language servers
 			use {
 			  'VonHeikemen/lsp-zero.nvim',
 			  branch = 'v1.x',
@@ -62,6 +60,14 @@ return require("packer").startup(function(use)
 			    -- Snippets
 			    {'L3MON4D3/LuaSnip'},             -- Required
 			    {'rafamadriz/friendly-snippets'}, -- Optional
+					{
+						'glepnir/lspsaga.nvim',
+						branch = "main",
+						requires = {
+								{ "nvim-tree/nvim-web-devicons" },
+								{ "nvim-treesitter/nvim-treesitter" },
+						},
+					}
 			  }
 			}
 			use("folke/zen-mode.nvim")
@@ -76,15 +82,6 @@ return require("packer").startup(function(use)
 			use("williamboman/mason.nvim") -- in charge of managing lsp servers, linters & formatters
 			use("williamboman/mason-lspconfig.nvim") -- bridges gap b/w mason & lspconfig
 
-			-- UI
-			use({
-					"glepnir/lspsaga.nvim",
-					branch = "main",
-					requires = {
-							{ "nvim-tree/nvim-web-devicons" },
-							{ "nvim-treesitter/nvim-treesitter" },
-					},
-			}) -- enhanced lsp uis
 			use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
 			-- autocompletion
 			use("hrsh7th/nvim-cmp") -- completion plugin
