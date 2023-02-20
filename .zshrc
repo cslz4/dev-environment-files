@@ -61,3 +61,4 @@ export PATH=/Users/carlossluzala/.local/bin:$PATH
 export PNPM_HOME="/Users/carlossluzala/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
+export LANG=en_US.UTF-8
