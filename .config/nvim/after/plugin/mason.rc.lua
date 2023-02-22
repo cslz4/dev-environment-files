@@ -7,4 +7,3 @@ mason.setup {}
 lspconfig.setup {
     ensure_installed = { 'eslint', 'tailwindcss' }
 }
-require 'lspconfig'.tailwindcss.setup {}

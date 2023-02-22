@@ -54,11 +54,13 @@ SPACESHIP_CHAR_SUFFIX=" "
 eval "$(starship init zsh)"
 export PATH=/Users/carlossluzala/.local/bin:$PATH
 
-# Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
-
 # pnpm
 export PNPM_HOME="/Users/carlossluzala/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
 export LANG=en_US.UTF-8
+. /usr/local/bin/z.sh
+source ~/powerlevel10k/powerlevel10k.zsh-theme
+
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"

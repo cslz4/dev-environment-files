@@ -4,8 +4,8 @@ local keymap = vim.keymap
 keymap.set('n', 'x', '"_x')
 
 -- Increment/decrement
-keymap.set('n',  '+', '<C-a>')
-keymap.set('n',  '-', '<C-x>')
+keymap.set('n', '+', '<C-a>')
+keymap.set('n', '-', '<C-x>')
 
 -- Delete a word backwards
 keymap.set('n', 'dw', 'vb"_d')
@@ -36,3 +36,7 @@ keymap.set('n', '<C-w>h', '<C-w>4>')
 keymap.set('n', '<C-w>l', '<C-w>4<')
 keymap.set('n', '<C-w>k', '<C-w>2+')
 keymap.set('n', '<C-w>j', '<C-w>2-')
+
+-- Move lines
+keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+keymap.set("v", "K", ":m '<-2<CR>gv=gv")

@@ -14,32 +14,39 @@ local on_attach = function(client, bufnr)
 end
 
 nvim_lsp.tsserver.setup {
-  on_attach = on_attach,
-  filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
-  cmd = { "typescript-language-server", "--stdio" }
+    on_attach = on_attach,
+    filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
+    cmd = { "typescript-language-server", "--stdio" }
 }
+
+nvim_lsp.eslint.setup {}
 
 nvim_lsp.lua_ls.setup {
-  on_attach = on_attach,
-  settings = {
-    Lua = {
-      diagnostics = {
-        -- Vim global
-        globals = { 'vim' }
-      },
-      workspace = {
-        library = vim.api.nvim_get_runtime_file("", true)
-      }
+    on_attach = on_attach,
+    settings = {
+        Lua = {
+            diagnostics = {
+                -- Vim global
+                globals = { 'vim', 'hs' }
+            },
+            workspace = {
+                library = vim.api.nvim_get_runtime_file("", true),
+                checkThirdParty = false
+            }
+        }
     }
-  }
 }
 
-nvim_lsp.eslint.setup({
-  --- ...
-  on_attach = function(client, bufnr)
-    vim.api.nvim_create_autocmd("BufWritePre", {
-      buffer = bufnr,
-      command = "EslintFixAll",
-    })
-  end,
-})
+nvim_lsp.tailwindcss.setup {
+    on_attach = on_attach,
+    settings = {
+        tailwindCSS = {
+            experimental = {
+                classRegex = {
+                    { "cva\\(([^)]*)\\)",
+                        "[\"'`]([^\"'`]*).*?[\"'`]" },
+                },
+            },
+        },
+    },
+}
