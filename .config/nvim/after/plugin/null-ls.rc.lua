@@ -20,28 +20,11 @@ end
 null_ls.setup {
     sources = {
         -- null_ls.builtins.formatting.prettierd,
-        null_ls.builtins.formatting.eslint_d.with({
-            command = "eslint_d",
-            args = { "--stdin", "--fix-to-stdout", "--stdin-filename", "$FILENAME" },
-            format = "raw",
-            condition = has_eslint_config,
-        }),
-        null_ls.builtins.diagnostics.eslint_d.with({
-            diagnostics_format = '[eslint] #{m}\n(#{c})',
-            condition = has_eslint_config,
-        }),
         null_ls.builtins.diagnostics.zsh
     },
     on_attach = function(client, bufnr)
-      if client.supports_method("textDocument/formatting") then
-        vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
-        vim.api.nvim_create_autocmd("BufWritePre", {
-            group = augroup,
-            buffer = bufnr,
-            callback = function()
-              lsp_formatting(bufnr)
-            end,
-        })
+      if client.server_capabilities.documentFormattingProvider then
+        vim.cmd("autocmd BufWritePre <buffer> lua vim.lsp.buf.format({ timeout_ms = 4000 })")
       end
     end
 }
