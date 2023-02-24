@@ -19,7 +19,7 @@ end
 
 null_ls.setup {
     sources = {
-        null_ls.builtins.formatting.prettierd,
+        -- null_ls.builtins.formatting.prettierd,
         null_ls.builtins.formatting.eslint_d.with({
             command = "eslint_d",
             args = { "--stdin", "--fix-to-stdout", "--stdin-filename", "$FILENAME" },
