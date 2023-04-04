@@ -1,7 +1,6 @@
 vim.cmd [[
-  augroup Yank
+  augroup WSLYank
   autocmd!
-  autocmd TextYankPost * :call system('/mnt/c/windows/system32/clip.exe ',@")
+  autocmd TextYankPost * :call system('clip.exe ',@")
   augroup END
 ]]
-

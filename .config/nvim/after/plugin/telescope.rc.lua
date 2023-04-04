@@ -15,6 +15,11 @@ telescope.setup {
       n = {
         ['q'] = actions.close
       }
+    },
+    file_ignore_patterns = {
+      "node_modules",
+      "yarn.lock",
+      "package-lock.json",
     }
   },
   extensions = {
