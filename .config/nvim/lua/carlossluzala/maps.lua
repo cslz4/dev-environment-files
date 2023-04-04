@@ -32,7 +32,7 @@ keymap.set('n', 'sj', '<C-w>j')
 keymap.set('n', 'sl', '<C-w>l')
 
 -- Resize windows
-keymap.set('n', '<C-w>h', '<C-w>4>')
+keymap.set('n', '<C-w>h', '<C-w>8>')
 keymap.set('n', '<C-w>l', '<C-w>4<')
 keymap.set('n', '<C-w>k', '<C-w>2+')
 keymap.set('n', '<C-w>j', '<C-w>2-')
@@ -40,3 +40,6 @@ keymap.set('n', '<C-w>j', '<C-w>2-')
 -- Move lines
 keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
+-- Reset
+keymap.set("n", "<leader>rs", ":so ~/.config/nvim/init.lua<Return>", { silent = true })
