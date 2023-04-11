@@ -94,6 +94,11 @@ _G.packer_plugins = {
     path = "/Users/carlossluzala/.local/share/nvim/site/pack/packer/start/colorbuddy.nvim",
     url = "https://github.com/tjdevries/colorbuddy.nvim"
   },
+  ["editorconfig.nvim"] = {
+    loaded = true,
+    path = "/Users/carlossluzala/.local/share/nvim/site/pack/packer/start/editorconfig.nvim",
+    url = "https://github.com/gpanders/editorconfig.nvim"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/Users/carlossluzala/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
