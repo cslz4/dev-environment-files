@@ -41,5 +41,5 @@ keymap.set('n', '<C-w>j', '<C-w>2-')
 keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
--- Reset
-keymap.set("n", "<leader>rs", ":so ~/.config/nvim/init.lua<Return>", { silent = true })
+-- highlight
+keymap.set("n", "<leader>n", ":nohl<Return>", {silent = true})
