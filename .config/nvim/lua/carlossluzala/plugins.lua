@@ -20,6 +20,7 @@ packer.startup(function(use)
   use 'hrsh7th/cmp-nvim-lsp' -- nvim-cmp source for LSP
   use 'hrsh7th/nvim-cmp' -- Completion
   use 'neovim/nvim-lspconfig' -- LSP
+  use 'gpanders/editorconfig.nvim' -- Editor config
   use {
       'nvim-treesitter/nvim-treesitter',
       run = ':TSUpdate'
