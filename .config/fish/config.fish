@@ -13,4 +13,7 @@ alias fishc="vim ~/.config/fish/config.fish"
 alias fishs="source ~/.config/fish/config.fish"
 alias ls="exa"
 alias theme="vim ~/.config/starship.toml"
+alias nvim_paste="$HOME/bin/nvim_paste.sh"
 echo 'export PATH="$PATH:$HOME/bin"' >>~/.bashrc
+export PATH="$PATH:/mnt/c/Program Files/win32yank-x64/win32yank.exe"
+
