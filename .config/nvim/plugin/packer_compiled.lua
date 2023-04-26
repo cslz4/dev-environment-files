@@ -134,10 +134,10 @@ _G.packer_plugins = {
     path = "/home/carlossluzala/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
-  ["neosolarized.nvim"] = {
+  neovim = {
     loaded = true,
-    path = "/home/carlossluzala/.local/share/nvim/site/pack/packer/start/neosolarized.nvim",
-    url = "https://github.com/svrana/neosolarized.nvim"
+    path = "/home/carlossluzala/.local/share/nvim/site/pack/packer/start/neovim",
+    url = "https://github.com/rose-pine/neovim"
   },
   ["null-ls.nvim"] = {
     loaded = true,
@@ -208,6 +208,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/carlossluzala/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["transparent.nvim"] = {
+    loaded = true,
+    path = "/home/carlossluzala/.local/share/nvim/site/pack/packer/start/transparent.nvim",
+    url = "https://github.com/xiyaowong/transparent.nvim"
   },
   ["vim-fugitive"] = {
     loaded = true,

@@ -12,9 +12,8 @@ packer.startup(function(use)
   use 'glepnir/lspsaga.nvim' -- LSP UIs
   use 'tjdevries/colorbuddy.nvim'
   use 'nvim-lualine/lualine.nvim'
-  use {
-    'svrana/neosolarized.nvim', -- colorscheme
-    requires = { 'tjdevries/colorbuddy.nvim' } }
+  use 'rose-pine/neovim'
+  use 'xiyaowong/transparent.nvim'
   use 'L3MON4D3/LuaSnip' -- Snippet
   use 'onsails/lspkind.nvim' -- vscode-like pictograms
   use 'hrsh7th/cmp-buffer' -- nvim-cmp source for buffer words
