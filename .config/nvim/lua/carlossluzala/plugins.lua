@@ -12,7 +12,8 @@ packer.startup(function(use)
   use 'glepnir/lspsaga.nvim' -- LSP UIs
   use 'tjdevries/colorbuddy.nvim'
   use 'nvim-lualine/lualine.nvim'
-  use 'ishan9299/nvim-solarized-lua'
+  use 'lourenci/github-colors'
+  use { "alexghergh/nvim-tmux-navigation" }
   use 'xiyaowong/transparent.nvim'
   use 'L3MON4D3/LuaSnip' -- Snippet
   use 'onsails/lspkind.nvim' -- vscode-like pictograms

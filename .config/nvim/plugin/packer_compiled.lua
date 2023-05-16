@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "/home/carlossluzala/.local/share/nvim/site/pack/packer/start/editorconfig.nvim",
     url = "https://github.com/gpanders/editorconfig.nvim"
   },
+  ["github-colors"] = {
+    loaded = true,
+    path = "/home/carlossluzala/.local/share/nvim/site/pack/packer/start/github-colors",
+    url = "https://github.com/lourenci/github-colors"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/home/carlossluzala/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
@@ -164,10 +169,10 @@ _G.packer_plugins = {
     path = "/home/carlossluzala/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
-  ["nvim-solarized-lua"] = {
+  ["nvim-tmux-navigation"] = {
     loaded = true,
-    path = "/home/carlossluzala/.local/share/nvim/site/pack/packer/start/nvim-solarized-lua",
-    url = "https://github.com/ishan9299/nvim-solarized-lua"
+    path = "/home/carlossluzala/.local/share/nvim/site/pack/packer/start/nvim-tmux-navigation",
+    url = "https://github.com/alexghergh/nvim-tmux-navigation"
   },
   ["nvim-treesitter"] = {
     loaded = true,
