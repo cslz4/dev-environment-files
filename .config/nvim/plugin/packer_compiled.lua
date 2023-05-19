@@ -114,11 +114,6 @@ _G.packer_plugins = {
     path = "/home/carlossluzala/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
   },
-  ["lspkind.nvim"] = {
-    loaded = true,
-    path = "/home/carlossluzala/.local/share/nvim/site/pack/packer/start/lspkind.nvim",
-    url = "https://github.com/onsails/lspkind.nvim"
-  },
   ["lspsaga.nvim"] = {
     loaded = true,
     path = "/home/carlossluzala/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
@@ -183,11 +178,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/carlossluzala/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag",
     url = "https://github.com/windwp/nvim-ts-autotag"
-  },
-  ["nvim-web-devicons"] = {
-    loaded = true,
-    path = "/home/carlossluzala/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
-    url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
