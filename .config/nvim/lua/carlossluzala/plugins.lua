@@ -12,7 +12,12 @@ packer.startup(function(use)
   use 'glepnir/lspsaga.nvim' -- LSP UIs
   use 'tjdevries/colorbuddy.nvim'
   use 'nvim-lualine/lualine.nvim'
-  use 'lourenci/github-colors'
+  use {
+    "craftzdog/solarized-osaka.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  }
   use { "alexghergh/nvim-tmux-navigation" }
   use 'xiyaowong/transparent.nvim'
   use 'L3MON4D3/LuaSnip' -- Snippet
@@ -44,4 +49,13 @@ packer.startup(function(use)
   use 'lewis6991/gitsigns.nvim'
   use 'tpope/vim-fugitive' -- For git blame & browse
   use 'theprimeagen/harpoon' -- For git blame & browse
+  use {
+    "jiaoshijie/undotree",
+    config = function()
+      require('undotree').setup()
+    end,
+    requires = {
+      "nvim-lua/plenary.nvim",
+    },
+  }
 end)

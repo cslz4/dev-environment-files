@@ -99,11 +99,6 @@ _G.packer_plugins = {
     path = "/home/carlossluzala/.local/share/nvim/site/pack/packer/start/editorconfig.nvim",
     url = "https://github.com/gpanders/editorconfig.nvim"
   },
-  ["github-colors"] = {
-    loaded = true,
-    path = "/home/carlossluzala/.local/share/nvim/site/pack/packer/start/github-colors",
-    url = "https://github.com/lourenci/github-colors"
-  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/home/carlossluzala/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
@@ -194,6 +189,11 @@ _G.packer_plugins = {
     path = "/home/carlossluzala/.local/share/nvim/site/pack/packer/start/prettier.nvim",
     url = "https://github.com/MunifTanjim/prettier.nvim"
   },
+  ["solarized-osaka.nvim"] = {
+    loaded = true,
+    path = "/home/carlossluzala/.local/share/nvim/site/pack/packer/start/solarized-osaka.nvim",
+    url = "https://github.com/craftzdog/solarized-osaka.nvim"
+  },
   ["telescope-file-browser.nvim"] = {
     loaded = true,
     path = "/home/carlossluzala/.local/share/nvim/site/pack/packer/start/telescope-file-browser.nvim",
@@ -209,6 +209,12 @@ _G.packer_plugins = {
     path = "/home/carlossluzala/.local/share/nvim/site/pack/packer/start/transparent.nvim",
     url = "https://github.com/xiyaowong/transparent.nvim"
   },
+  undotree = {
+    config = { "\27LJ\2\0026\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rundotree\frequire\0" },
+    loaded = true,
+    path = "/home/carlossluzala/.local/share/nvim/site/pack/packer/start/undotree",
+    url = "https://github.com/jiaoshijie/undotree"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/home/carlossluzala/.local/share/nvim/site/pack/packer/start/vim-fugitive",
@@ -217,6 +223,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: undotree
+time([[Config for undotree]], true)
+try_loadstring("\27LJ\2\0026\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rundotree\frequire\0", "config", "undotree")
+time([[Config for undotree]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

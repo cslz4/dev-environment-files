@@ -1,1 +1,1 @@
-vim.cmd.colorscheme "github-colors"
+vim.cmd.colorscheme "solarized-osaka"
