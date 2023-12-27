@@ -94,6 +94,11 @@ _G.packer_plugins = {
     path = "/home/carlossluzala/.local/share/nvim/site/pack/packer/start/colorbuddy.nvim",
     url = "https://github.com/tjdevries/colorbuddy.nvim"
   },
+  ["conform.nvim"] = {
+    loaded = true,
+    path = "/home/carlossluzala/.local/share/nvim/site/pack/packer/start/conform.nvim",
+    url = "https://github.com/stevearc/conform.nvim"
+  },
   ["editorconfig.nvim"] = {
     loaded = true,
     path = "/home/carlossluzala/.local/share/nvim/site/pack/packer/start/editorconfig.nvim",
@@ -154,6 +159,11 @@ _G.packer_plugins = {
     path = "/home/carlossluzala/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
     url = "https://github.com/norcalli/nvim-colorizer.lua"
   },
+  ["nvim-lint"] = {
+    loaded = true,
+    path = "/home/carlossluzala/.local/share/nvim/site/pack/packer/start/nvim-lint",
+    url = "https://github.com/mfussenegger/nvim-lint"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/carlossluzala/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
@@ -198,6 +208,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/carlossluzala/.local/share/nvim/site/pack/packer/start/telescope-file-browser.nvim",
     url = "https://github.com/nvim-telescope/telescope-file-browser.nvim"
+  },
+  ["telescope-fzf-native.nvim"] = {
+    loaded = true,
+    path = "/home/carlossluzala/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
+    url = "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,

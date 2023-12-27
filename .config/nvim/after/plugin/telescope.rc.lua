@@ -25,7 +25,7 @@ telescope.setup {
   extensions = {
     file_browser = {
       theme = 'dropdown',
-      -- disables netrw add use telescope-file-browser in its place
+      -- -- disables netrw add use telescope-file-browser in its place
       hijack_netrw = true,
       mappings = {
         -- your custom insert mode mappings

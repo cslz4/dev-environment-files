@@ -42,4 +42,4 @@ keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 -- highlight
-keymap.set("n", "<leader>n", ":nohl<Return>", {silent = true})
+keymap.set("n", "<leader>n", ":nohl<Return>", { silent = true })
